@@ -2,15 +2,16 @@
   "name": "server_side_dev_coursera",
   "version": "1.0.0",
   "description": "",
-  "main": "file.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/liv-yaa/server_side_dev_coursera.git"
   },
-  "author": "",
+  "author": "Olivia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/liv-yaa/server_side_dev_coursera/issues"
