@@ -26,9 +26,10 @@ function solveRect(l, b) {
     }
 }
 
+
 function solveRectCallbackWay(l, b) {
     // Same idea as above, but uses a callback for error handling
-    // This allows the operation to occur asynchronously!
+    // This allows the operation to occur async
     console.log("Solving for rectangle with l = " + l + " and b = " + b);
 
     rectangle(l, b, (err, rectangle) => {
@@ -50,4 +51,6 @@ solveRectCallbackWay(1, 4);
 solveRectCallbackWay(-1, 4);
 // solveRectCallbackWay(1, 4);
 // solveRectCallbackWay(1, 4);
+
+
 
