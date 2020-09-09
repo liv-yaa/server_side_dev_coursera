@@ -1,5 +1,6 @@
-const rect = require('./rectangle'); //require it
+// A Great Intro + understanding of callback functions, JS, etc from my Coursera course
 
+const rectangle = require('./rectangle'); // require the module I just built in the file
 // console.log(rectangle.name);
 // Use the module's functions (defined in module.exports)
 // console.log("rectagle module works: ", rectangle.perimeter(2, 3));
@@ -8,10 +9,10 @@ const rect = require('./rectangle'); //require it
 // https://www.coursera.org/learn/server-side-nodejs/lecture/dUnyG/exercise-video-understanding-node-modules
 
 // First, Create a JavaScript Object named rect and assign the function names to the JS Object.
-// This will allow you to do these operations on the object.
+// This will allow you to do these operations `perimeter` and `area` on the object.
 var rect = {
-    perimeter: (x, y) => rectangle.perimeter(x, y),
-    area: (x, y) => rectangle.area(x, y),
+    perimeter: (x, y) => rectangle.perimeter(x, y), // get from rectangle's module.exports
+    area: (x, y) => rectangle.area(x, y), // get from rectangle's module.exports (which we defined in rectangle.js)
 }
 
 // Costly: Solve the 'normal' way (without a callback) 
@@ -63,8 +64,5 @@ function solveRectCallbackWay(l, b) {
 };
 solveRectCallbackWay(1, 4);
 solveRectCallbackWay(-1, 4);
-// solveRectCallbackWay(1, 4);
-// solveRectCallbackWay(1, 4);
-
 
 
