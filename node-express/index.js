@@ -4,11 +4,19 @@
 
 const express = require('express')
 const http = require('http');
+const morgan = require('morgan'); // used for logging purposes
+
+// Must also create package.json and install the above ^^
+//      npm install morgan@1.9.0 --save
+//      npm install express@4.16.3 --save so that npm will add them to node modules
 
 const hostname = 'localhost';
-const port = 3000;
+const port = 3001;
 
 const app = express();
+
+app.use(morgan('dev'));
+app.use(express.static(__dirname + '/public'));
 
 app.use((req, res, next) => {
     console.log(req.headers);

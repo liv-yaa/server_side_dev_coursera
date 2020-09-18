@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/liv-yaa/server_side_dev_coursera/issues"
   },
-  "homepage": "https://github.com/liv-yaa/server_side_dev_coursera#readme"
+  "homepage": "https://github.com/liv-yaa/server_side_dev_coursera#readme",
+  "dependencies": {
+    "morgan": "^1.9.0"
+  }
 }
